@@ -86,7 +86,8 @@
 .header .header_inner .util {}
 
 .header .header_inner .util i {
-    font-size: 24px;
+    font-size: 32px;
+    vertical-align: middle;
 }
 
 .mainVisual {
@@ -114,4 +115,76 @@
 
 .mainVisual .visual_slide .itm04 {
     background: url(../images/web_banner004.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.mainVisual .content p {
+    margin: 0 0 32px 0;
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 36px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.mainVisual .content span {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.mainVisual .itm01 .content p {
+    color: #ff954e;
+}
+
+.mainVisual .itm01 .content span {
+    color: #ff954e;
+}
+
+.mainContent {}
+
+.mainContent .inner {
+    display: flex;
+    gap: 50px;
+}
+
+.mainContent .inner>* {
+    flex: 1;
+}
+
+.mainContent .inner .itm {
+    border-radius: 20px;
+    padding: 30px;
+    background: #ffaa71;
+}
+
+.mainContent .inner .itm p {
+    margin: 0 0 16px 0;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #fff;
+
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.mainContent .inner .itm .lnk {
+    text-align: center;
+}
+
+.mainContent .inner .itm .lnk a {
+    color: #ff954e;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
