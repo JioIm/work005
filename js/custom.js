@@ -1,7 +1,7 @@
 $(function () {
     $('.visual_slide').slick({
-        arrows: false,
         autoplay: true,
+        dots: true,
         pauseOnHover: false,
         autoplaySpeed: 3000
     });

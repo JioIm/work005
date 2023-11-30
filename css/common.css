@@ -15,10 +15,17 @@
 
 .default .title h2 {
     font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
 }
 
 .default .title p {
     font-size: 18px;
+    margin: 16px 0 0 0;
+}
+
+.default .title span {
+    margin: 16px 0 0 0;
 }
 
 .default_btn {

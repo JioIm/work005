@@ -1,6 +1,6 @@
-/* * {
-    outline: 1px solid tomato;
-} */
+* {
+    outline: 1px solid tomato--;
+}
 
 .header {
     background: #fff;
@@ -126,15 +126,17 @@
     max-width: 1200px;
     width: 100%;
     padding: 0 15px;
+    text-align: right;
 }
 
 .mainVisual .content p {
-    margin: 0 0 32px 0;
+    margin: 0 0 24px 0;
     font-size: 32px;
     font-weight: 500;
     color: #fff;
-    line-height: 36px;
+    /* line-height: 36px; */
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    
 }
 
 .mainVisual .content span {
@@ -142,6 +144,7 @@
     font-weight: 700;
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    
 }
 
 .mainVisual .itm01 .content p {
@@ -150,6 +153,72 @@
 
 .mainVisual .itm01 .content span {
     color: #ff954e;
+}
+
+
+.mainVisual .visual_slide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    /* transform: translate(0, -50%); */
+    z-index: 999;
+
+    border: none;
+    background: transparent;
+
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-top: 3px solid rgba(255, 255, 255, 0.4);
+    border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.mainVisual .visual_slide .slick-prev {
+    left: 80px;
+    transform: translate(0, -50%) rotate(-45deg);
+}
+
+.mainVisual .visual_slide .slick-next {
+    right: 80px;
+    transform: translate(0, -50%) rotate(135deg);
+}
+
+.mainVisual .visual_slide .slick-dots {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    transform: translate(0, -50%) ;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.mainVisual .visual_slide .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    background: #fff;
+    margin: 0 10px 0 0;
+    border-radius: 2px;
+}
+
+.mainVisual .visual_slide .slick-dots li::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: #ff954e;
+}
+
+.mainVisual .visual_slide .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 3s;
+}
+
+.mainVisual .visual_slide .slick-dots li button {
+    display: none;
 }
 
 .mainContent {}
@@ -192,7 +261,7 @@
 .mainBanner {
     position: relative;
     height: 300px;
-    background: url(../images/place_img.jpg) no-repeat fixed center center/cover;
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/place_img.jpg) no-repeat fixed center center/cover;
 }
 
 .mainBanner .title {
@@ -223,6 +292,7 @@
 }
 
 .mainMap .inner {
+    position: relative;
     display: flex;
 }
 
@@ -232,6 +302,15 @@
 
 .mainMap .__map {
     width: 800px;
+}
+
+.mainMap .inner .title p {
+    line-height: 24px;
+}
+
+.mainMap .inner .title span{
+font-size: 32px;
+color: #ffaa71;
 }
 
 /* .mainMap .__map .map_wrap {
@@ -248,6 +327,84 @@
     left: 0;
     width: 100%;
 } */
+
+.footer {
+    padding: 100px 0;
+    background: #ffaa71;
+    color: #FFF;
+}
+
+.footer .footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer .footer_top {
+}
+
+.footer .footer_top .inner ul{
+    display: flex;
+    gap: 40px;
+    margin: 0 0 24px 0;
+}
+
+.footer .footer_top .inner ul li {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer .footer_top .inner ul li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+}
+
+.footer .footer_bottom {
+    /* padding: 32px 0; */
+}
+
+.footer .footer_bottom .inner {
+   display: flex;
+}
+
+.footer .footer_bottom li {
+    display: inline-block;
+    margin: 0 18px 4px 0;
+    font-size: 16px;
+}
+
+.footer .footer_wrap .customer {
+    white-space: nowrap;
+}
+
+.footer .footer_wrap .customer strong {
+    display: block;
+    margin: 0 0 24px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer .footer_wrap .customer .tel i {
+    padding: 8px;
+    background: #fff;
+    border-radius: 50%;
+    color: #ff954e;
+    font-size: 24px;
+    margin: 0 16px 0 0;
+}
+.footer .footer_wrap .customer .tel span {
+    font-size: 32px;
+    font-weight: 900;
+}
+
 
 .popup {
     position: fixed;
