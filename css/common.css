@@ -8,6 +8,19 @@
     padding: 100px 0;
 }
 
+.default .title {
+    max-width: 1200px;
+    margin: 0 auto 32px auto;
+}
+
+.default .title h2 {
+    font-size: 32px;
+}
+
+.default .title p {
+    font-size: 18px;
+}
+
 .default_btn {
     display: inline-block;
     border: none;

@@ -188,3 +188,87 @@
     color: #ff954e;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
+
+.mainBanner {
+    position: relative;
+    height: 300px;
+    background: url(../images/place_img.jpg) no-repeat fixed center center/cover;
+}
+
+.mainBanner .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.mainBanner .title h2 {
+    font-weight: 700;
+    color: #fff;
+    line-height: 48px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.mainBanner .title p {
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.mainBanner .title p {
+    font-size: 16px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.mainMap .inner {
+    display: flex;
+}
+
+.mainMap .inner>* {
+    flex: 1;
+}
+
+.mainMap .__map {
+    width: 800px;
+}
+
+/* .mainMap .__map .map_wrap {
+    height: 100%;
+}
+
+.mainMap .right_map .map_wrap {
+    position: relative;
+}
+
+.mainMap .right_map .__map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+} */
+
+.popup {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 200px;
+}
+
+.popup img {
+    width: 100%;
+}
+
+.popup .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    background: #42210b;
+    color: #fff;
+}
