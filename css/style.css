@@ -136,7 +136,7 @@
     color: #fff;
     /* line-height: 36px; */
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    
+
 }
 
 .mainVisual .content span {
@@ -144,7 +144,7 @@
     font-weight: 700;
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    
+
 }
 
 .mainVisual .itm01 .content p {
@@ -159,18 +159,17 @@
 .mainVisual .visual_slide .slick-arrow {
     position: absolute;
     top: 50%;
-    /* left: 50%; */
-    /* transform: translate(0, -50%); */
     z-index: 999;
 
     border: none;
     background: transparent;
+    cursor: pointer;
 
     font-size: 0;
-    width: 40px;
-    height: 40px;
-    border-top: 3px solid rgba(255, 255, 255, 0.4);
-    border-left: 3px solid rgba(255, 255, 255, 0.4);
+    width: 30px;
+    height: 30px;
+    border-top: 3px solid rgba(200, 200, 200, 0.4);
+    border-left: 3px solid rgba(200, 200, 200, 0.4);
 }
 
 .mainVisual .visual_slide .slick-prev {
@@ -186,23 +185,25 @@
 .mainVisual .visual_slide .slick-dots {
     position: absolute;
     bottom: 50px;
-    right: 0;
-    transform: translate(0, -50%) ;
+    left: 50%;
+    transform: translate(-50%, 0);
     max-width: 1200px;
     width: 100%;
+    padding: 0 15px;
+    text-align: right;
 }
 
 .mainVisual .visual_slide .slick-dots li {
     position: relative;
     display: inline-block;
-    width: 100px;
+    width: 50px;
     height: 4px;
-    background: #fff;
+    background: #ddd;
     margin: 0 10px 0 0;
     border-radius: 2px;
 }
 
-.mainVisual .visual_slide .slick-dots li::after{
+.mainVisual .visual_slide .slick-dots li::after {
     content: "";
     position: absolute;
     top: 0;
@@ -258,10 +259,22 @@
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
+.mainContent .inner .itm .lnk:hover .default_btn {
+    display: inline-block;
+    border: none;
+    background: #42210b;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
 .mainBanner {
     position: relative;
     height: 300px;
-    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/place_img.jpg) no-repeat fixed center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/place_img.jpg) no-repeat fixed center center/cover;
 }
 
 .mainBanner .title {
@@ -308,9 +321,9 @@
     line-height: 24px;
 }
 
-.mainMap .inner .title span{
-font-size: 32px;
-color: #ffaa71;
+.mainMap .inner .title span {
+    font-size: 32px;
+    color: #ffaa71;
 }
 
 /* .mainMap .__map .map_wrap {
@@ -342,10 +355,9 @@ color: #ffaa71;
     padding: 0 15px;
 }
 
-.footer .footer_top {
-}
+.footer .footer_top {}
 
-.footer .footer_top .inner ul{
+.footer .footer_top .inner ul {
     display: flex;
     gap: 40px;
     margin: 0 0 24px 0;
@@ -373,7 +385,7 @@ color: #ffaa71;
 }
 
 .footer .footer_bottom .inner {
-   display: flex;
+    display: flex;
 }
 
 .footer .footer_bottom li {
@@ -392,6 +404,7 @@ color: #ffaa71;
     font-size: 18px;
     font-weight: 600;
 }
+
 .footer .footer_wrap .customer .tel i {
     padding: 8px;
     background: #fff;
@@ -400,6 +413,7 @@ color: #ffaa71;
     font-size: 24px;
     margin: 0 16px 0 0;
 }
+
 .footer .footer_wrap .customer .tel span {
     font-size: 32px;
     font-weight: 900;
@@ -411,6 +425,7 @@ color: #ffaa71;
     bottom: 100px;
     right: 100px;
     width: 200px;
+    z-index: 999;
 }
 
 .popup img {
